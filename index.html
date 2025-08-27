@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Random Survey</title>
+  <script>
+    window.onload = function() {
+      // 👇 Replace these with your survey URLs
+      const surveys = [
+        "https://example.com/survey1",
+        "https://example.com/survey2"
+      ];
+
+      // Randomly pick one
+      const choice = surveys[Math.floor(Math.random() * surveys.length)];
+      window.location.href = choice;
+    };
+  </script>
+</head>
+<body>
+  Redirecting you to a survey...
+</body>
+</html>
